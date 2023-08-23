@@ -9,7 +9,7 @@
   },
   "scripts": {
     "co:login": "aws codeartifact login --tool npm --repository deps --domain deps",
-    "lerna-publish": "lerna exec --parallel -- npm run build && lerna exec --parallel -- npm publish"
+    "publish": "lerna exec --parallel -- npm run build && lerna exec --parallel -- npm publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",
