@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "scripts": {
+    "co:login": "aws codeartifact login --tool npm --repository deps --domain deps",
+    "lerna-publish": "lerna exec --parallel -- npm run build && lerna exec --parallel -- npm publish"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "lerna": "^7.1.5"
+  },
+  "publishConfig": {
+    "registry": "https://deps-586555832354.d.codeartifact.us-east-1.amazonaws.com/npm/deps/"
+  }
+}

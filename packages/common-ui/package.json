@@ -1,0 +1,13 @@
+{
+  "name": "common-ui",
+  "version": "1.0.1",
+  "description": "",
+  "main": "es",
+  "scripts": {
+    "build": "babel src -d es"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "module": "es"
+}

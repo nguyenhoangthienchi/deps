@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "npmClient": "npm",
+  "scripts": {
+    "build": "lerna exec --parallel -- babel packages/*/src -d packages/*/es"
+  }
+}
