@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Logo = (src, text) => {
+const Logo = ({
+    src,
+    text
+}) => {
     return (
         <div>
             <img src={src} alt={text} />

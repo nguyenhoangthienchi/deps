@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Text = (text) => {
+const Text = ({
+    children
+}) => {
     return (
         <span>
-            {text}
+            {children}
         </span>
     )
 };
